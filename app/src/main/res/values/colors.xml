@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#252525</color>
+
+
+    <!--App Color Background -->
+    <color name="appbg">#F1F7E5</color>
+    <color name="appcolor">#252525</color>
+    <color name="blackColor">#000000</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+
+    <!--swiperefresh-->
+    <color name="colorLoadRefresh">#ff9800</color>
+    <color name="colorFinishedRefreshed">#4caf50</color>
+
+</resources>

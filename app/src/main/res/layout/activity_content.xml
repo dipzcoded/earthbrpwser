@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <!--ImageView-->
+    <ImageView
+        android:id="@+id/imagecontent"
+        android:layout_width="260dp"
+        android:layout_height="280dp"
+        android:src="@drawable/crash"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        />
+
+
+    <!--TextView-->
+    <TextView
+        android:id="@+id/titlecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Project Title"
+        android:textAlignment="center"
+        android:textColor="@color/appcolor"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!--TextView-->
+    <TextView
+        android:id="@+id/messagecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/raleway"
+        android:lineSpacingExtra="6dp"
+        android:padding="10dp"
+        android:text="Sed velit lectus, porttitor eu convallis sit amet, semper eget mauris. Integer in pulvinar mauris. Donec facilisis placerat magna sed cursus. Mauris vel tristique arcu. Duis congue"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+</LinearLayout>

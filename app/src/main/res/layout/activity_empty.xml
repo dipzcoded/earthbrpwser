@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmptyActivity">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/appcolor"
+        app:titleTextColor="@color/appbg"
+        android:id="@+id/toolbar"
+        />
+
+    <!--Buttons Layout-->
+
+
+    <!--AppcompatButton-->
+    <ImageView
+        android:id="@+id/homeurlBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/whitehomeicon"
+        android:background="@drawable/roundblackbg"
+        android:padding="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <!--edittext-->
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/searchurlEdit"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edittextbg"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:hint="Search Address"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/searchurlBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/whitesearchicon"
+        android:background="@drawable/roundblackbg"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <ImageView
+        android:id="@+id/emptyimg"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/searchurlEdit"
+        android:src="@drawable/error4041"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/emptystatetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptyimg"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/raleway_bold"
+        android:text="No Connection!"
+        android:textSize="28sp"
+        android:textColor="@color/appcolor"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/emptystatemsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptystatetitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/raleway"
+        android:text="Please check your internet Connection"
+        android:textSize="20sp" />
+
+</RelativeLayout>

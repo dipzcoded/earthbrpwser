@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homebrowser"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".BrowserActivity">
+
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/appcolor"
+        app:titleTextColor="@color/appbg"
+        android:id="@+id/toolbar"
+        />
+
+
+    <!--ImageView-->
+    <ImageView
+        android:id="@+id/browsertheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:alpha="0.95"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_anim"/>
+
+    <!--Buttons Layout-->
+
+
+        <!--AppcompatButton-->
+       <ImageView
+           android:id="@+id/browserhomeBtn"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:src="@drawable/homeicon"
+           android:background="@drawable/roundbg"
+           android:padding="5dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="25dp"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@id/toolbar"
+           android:layout_marginLeft="10dp"
+           android:clickable="true"
+           android:focusable="true"
+           />
+        <!--edittext-->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/browserurlEdit"
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+            android:background="@drawable/edittextbg"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar"
+            android:hint="Search Address"
+            android:paddingLeft="15dp"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/browsersearchBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/searchicon"
+            android:background="@drawable/roundbg"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/toolbar"
+            android:layout_marginRight="10dp"
+            />
+
+    <!--Linearlayout-->
+    <LinearLayout
+        android:id="@+id/favContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browserurlEdit"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="45dp"
+            >
+
+            <ImageView
+                android:id="@+id/facebookbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/facebookicon"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/spotifybtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/spotifyicon"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/amazonbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/amazonicon"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/linkedinbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/linkedin"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp"
+            >
+
+            <ImageView
+                android:id="@+id/pinterestbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/pinteresticon"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/slackbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/slackicon"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/twitterbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/twittericon"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/gmailbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/gmailicon"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
